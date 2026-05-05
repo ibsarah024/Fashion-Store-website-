@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIOR — Fragrances Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="index.html">DIOR</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="designer.html">Designer</a></li>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="fragrances.html" class="active">Fragrances</a></li>
+    <li><a href="review.html">Review</a></li>
+  </ul>
+  <div class="nav-icons"><a href="cart.html">??</a></div>
+</nav>
+
+<section class="collection-hero reveal">
+  <div class="collection-hero-content"><p class="story-tag">COLLECTION</p><h1>Fragrances</h1><p>Discover signature scents that capture the essence of modern luxury.</p></div>
+</section>
+
+<section class="section">
+  <div class="shop-grid stagger reveal">
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_1.png" alt="Eau de Parfum"></div></a><div class="shop-card-body"><h3>Eau de Parfum</h3><p class="shop-desc">A timeless floral composition with jasmine, rose, and ylang-ylang.</p><div class="shop-card-footer"><span class="shop-price">$150</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_2.png" alt="Rose Essence"></div></a><div class="shop-card-body"><h3>Rose Essence</h3><p class="shop-desc">Pure Grasse rose captured in a luxurious eau de parfum concentrate.</p><div class="shop-card-footer"><span class="shop-price">$210</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_3.png" alt="Oud Collection"></div></a><div class="shop-card-body"><h3>Oud Collection</h3><p class="shop-desc">Rich oud wood blended with warm amber and smoky incense notes.</p><div class="shop-card-footer"><span class="shop-price">$340</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_1.png" alt="Jasmine Noir"></div></a><div class="shop-card-body"><h3>Jasmine Noir</h3><p class="shop-desc">Night-blooming jasmine with dark vanilla and precious wood base.</p><div class="shop-card-footer"><span class="shop-price">$185</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_2.png" alt="Amber Musk"></div></a><div class="shop-card-body"><h3>Amber Musk</h3><p class="shop-desc">Warm amber and white musk create an intimate, sensual trail.</p><div class="shop-card-footer"><span class="shop-price">$275</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_3.png" alt="Travel Set"></div></a><div class="shop-card-body"><h3>Travel Set</h3><p class="shop-desc">Curated miniature collection of five signature scents for on-the-go.</p><div class="shop-card-footer"><span class="shop-price">$120</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_1.png" alt="Vanilla Blossom"></div></a><div class="shop-card-body"><h3>Vanilla Blossom</h3><p class="shop-desc">Sweet vanilla and delicate orange blossom in a warm gourmand blend.</p><div class="shop-card-footer"><span class="shop-price">$195</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_2.png" alt="Citrus Fresh"></div></a><div class="shop-card-body"><h3>Citrus Fresh</h3><p class="shop-desc">Sparkling bergamot and Sicilian lemon with green tea freshness.</p><div class="shop-card-footer"><span class="shop-price">$145</span></div></div></div>
+    <div class="shop-card"><a href="product.html"><div class="shop-card-img"><img src="assets/images/fragrance_bottle_3.png" alt="Midnight Santal"></div></a><div class="shop-card-body"><h3>Midnight Santal</h3><p class="shop-desc">Creamy sandalwood with cardamom spice and velvety leather accord.</p><div class="shop-card-footer"><span class="shop-price">$310</span></div></div></div>
+  </div>
+</section>
+
+<footer class="footer-dark">
+  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})</script>
+</body>
+</html>
+

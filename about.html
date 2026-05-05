@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIOR — About Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar">
+  <a class="navbar-brand" href="index.html">DIOR</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About Us</a></li>
+    <li><a href="designer.html">Designer</a></li>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="fragrances.html">Fragrances</a></li>
+    <li><a href="review.html">Review</a></li>
+  </ul>
+  <div class="nav-icons"><a href="cart.html">??</a></div>
+</nav>
+
+<section class="about-hero reveal"><div class="about-hero-content"><h1>Our Story</h1><p>A legacy of elegance, craftsmanship, and timeless fashion since day one.</p></div></section>
+
+<section class="section about-intro">
+  <div class="about-intro-grid">
+    <div class="about-img-block reveal-left"><img src="assets/images/about_interior.png" alt="About DIOR"></div>
+    <div class="about-text-block reveal-right">
+      <p class="story-tag">WHO WE ARE</p>
+      <h2>The Maison</h2>
+      <p>Founded with a vision to redefine modern luxury, DIOR brings together curated collections from the world's finest designers. We believe that fashion is more than clothing — it is an expression of identity, culture, and craftsmanship.</p>
+      <p>From our flagship stores to our digital experience, every detail is designed to reflect the elegance and quality our customers deserve.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section about-branches reveal">
+  <h2 class="section-title">Our Branches</h2>
+  <div class="branches-grid stagger">
+    <div class="branch-card"><div class="branch-img"><img src="assets/images/hero_boutique.png" alt="Branch 1"></div><h3>Downtown Flagship</h3><p class="branch-address">123 Fashion Avenue, New York, NY 10001</p><p class="branch-phone">?? +1 (212) 555-0100</p><p class="branch-hours">Mon–Sat: 10AM – 9PM</p></div>
+    <div class="branch-card"><div class="branch-img"><img src="assets/images/about_interior.png" alt="Branch 2"></div><h3>Mall of Elegance</h3><p class="branch-address">456 Luxury Blvd, Suite 200, Los Angeles, CA 90015</p><p class="branch-phone">?? +1 (310) 555-0200</p><p class="branch-hours">Mon–Sat: 10AM – 10PM</p></div>
+    <div class="branch-card"><div class="branch-img"><img src="assets/images/hero_boutique.png" alt="Branch 3"></div><h3>Riverside Boutique</h3><p class="branch-address">789 Couture Lane, Chicago, IL 60601</p><p class="branch-phone">?? +1 (312) 555-0300</p><p class="branch-hours">Mon–Fri: 11AM – 8PM</p></div>
+  </div>
+</section>
+
+<section class="section about-values reveal">
+  <h2 class="section-title">Our Values</h2>
+  <div class="values-grid stagger">
+    <div class="value-card"><span class="value-icon">?</span><h3>Craftsmanship</h3><p>Every piece is crafted with precision and passion, honoring traditional techniques with modern innovation.</p></div>
+    <div class="value-card"><span class="value-icon">?</span><h3>Sustainability</h3><p>We are committed to responsible sourcing and ethical practices across every step of our supply chain.</p></div>
+    <div class="value-card"><span class="value-icon">?</span><h3>Excellence</h3><p>From materials to service, we pursue the highest standards to deliver an exceptional experience.</p></div>
+  </div>
+</section>
+
+<section class="section about-contact reveal-scale">
+  <h2 class="section-title">Get in Touch</h2>
+  <p class="newsletter-sub">Have questions? We'd love to hear from you.</p>
+  <div class="contact-info-row">
+    <div class="contact-block"><h3>Email</h3><p>hello@DIOR.com</p></div>
+    <div class="contact-block"><h3>Phone</h3><p>+1 (800) 555-SHOP</p></div>
+    <div class="contact-block"><h3>Hours</h3><p>Mon – Fri: 9AM – 6PM</p></div>
+  </div>
+</section>
+
+<footer class="footer-dark">
+  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+</footer>
+<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})</script>
+</body>
+</html>
+
