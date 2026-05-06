@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIOR — Checkout</title>
+<title>DIOR â€” Checkout</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
     <li><a href="women.html">Women</a></li>
     <li><a href="fragrances.html">Fragrances</a></li>
   </ul>
-  <div class="nav-icons"><a href="#">??</a><a href="cart.html">??</a></div>
+  <div class="nav-icons"><a href="cart.html">&#128722;</a><button class="menu-toggle" id="menu-toggle">&#9776;</button></div>
 </nav>
 
 <section class="section checkout-page">
@@ -32,12 +32,12 @@
       </div>
       <div class="checkout-card reveal">
         <h2>Delivery Method</h2>
-        <label class="delivery-option selected"><input type="radio" name="delivery" checked><div class="delivery-info"><strong>Standard Delivery</strong><span>3–5 Business Days</span></div><span class="delivery-price">Free</span></label>
-        <label class="delivery-option"><input type="radio" name="delivery"><div class="delivery-info"><strong>Express Delivery</strong><span>1–2 Business Days</span></div><span class="delivery-price">$25.00</span></label>
+        <label class="delivery-option selected"><input type="radio" name="delivery" checked><div class="delivery-info"><strong>Standard Delivery</strong><span>3â€“5 Business Days</span></div><span class="delivery-price">Free</span></label>
+        <label class="delivery-option"><input type="radio" name="delivery"><div class="delivery-info"><strong>Express Delivery</strong><span>1â€“2 Business Days</span></div><span class="delivery-price">$25.00</span></label>
       </div>
       <div class="checkout-card reveal">
         <h2>Payment</h2>
-        <div class="form-group"><label>Card Number</label><input type="text" placeholder="?? 0000 0000 0000 0000"></div>
+        <div class="form-group"><label>Card Number</label><input type="text" placeholder="&#128179; 0000 0000 0000 0000"></div>
         <div class="form-row"><div class="form-group"><label>Expiry Date</label><input type="text" placeholder="MM/YY"></div><div class="form-group"><label>CVV</label><input type="text" placeholder="123"></div></div>
       </div>
     </div>
@@ -51,13 +51,13 @@
       <div class="summary-row"><span>Taxes</span><span>$0.00</span></div>
       <div class="summary-row summary-total"><span>Total</span><span>$5,665.00</span></div>
       <button id="purchaseBtn" class="btn-accent btn-full">Complete Purchase</button>
-      <p class="summary-note">?? Secure Checkout</p>
+      <p class="summary-note">&#128274; Secure Checkout</p>
     </div>
   </div>
 </section>
 
 <footer class="footer-dark">
-  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">Â© 2025 DIOR. All rights reserved.</span></div>
 </footer>
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
@@ -70,6 +70,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     setTimeout(()=>{window.location.href='confirmation.html'},1200);
   });
 });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if(menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 </script>
 </body>
 </html>

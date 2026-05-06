@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIOR — Order Confirmed</title>
+<title>DIOR â€” Order Confirmed</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
 <div class="confirm-brand">DIOR</div>
 
 <section class="confirm-page fade-in">
-  <div class="confirm-icon">?</div>
+  <div class="confirm-icon">&#10004;</div>
   <h1>Thank You for Your Order</h1>
   <p class="confirm-sub">Your order has been placed successfully.</p>
   <div class="confirm-order-num"><span>Order Number</span><strong>#CD-882941</strong></div>
@@ -32,12 +32,12 @@
     </div>
     <div class="confirm-right">
       <div class="confirm-card">
-        <h2>?? Delivery</h2>
+        <h2>&#128666; Delivery</h2>
         <p>Estimated Arrival:</p>
-        <p class="confirm-highlight">Oct 24 – Oct 26</p>
+        <p class="confirm-highlight">Oct 24 â€“ Oct 26</p>
       </div>
       <div class="confirm-card">
-        <h2>?? Shipping To</h2>
+        <h2>&#128205; Shipping To</h2>
         <p><strong>Jane Doe</strong></p>
         <p>123 Luxury Avenue, Suite 400</p>
         <p>New York, NY 10022</p>
@@ -52,9 +52,17 @@
 </section>
 
 <footer class="footer-dark">
-  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">Â© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})</script>
+<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if(menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+</script>
 </body>
 </html>
 

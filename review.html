@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIOR — Customer Testimonials</title>
+<title>DIOR â€” Customer Testimonials</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -19,7 +19,7 @@
     <li><a href="fragrances.html">Fragrances</a></li>
     <li><a href="review.html" class="active">Review</a></li>
   </ul>
-  <div class="nav-icons"><a href="cart.html">??</a></div>
+  <div class="nav-icons"><a href="cart.html">&#128722;</a><button class="menu-toggle" id="menu-toggle">&#9776;</button></div>
 </nav>
 
 <!-- HERO -->
@@ -44,7 +44,7 @@
     <div class="testimonial-card">
       <div class="testimonial-img"><img src="assets/images/review_portrait_1.png" alt="Lady Dior Handbag"></div>
       <div class="testimonial-body">
-        <div class="rv-stars">?????</div>
+        <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
         <h3>Lady Dior Handbag</h3>
         <p class="testimonial-quote">"An absolute masterpiece. The craftsmanship is unparalleled, and it instantly elevates any outfit. It's not just a bag; it's an investment in timeless elegance."</p>
         <p class="testimonial-author">ELEANOR V.</p>
@@ -54,7 +54,7 @@
     <div class="testimonial-card">
       <div class="testimonial-img"><img src="assets/images/fragrance_bottle_1.png" alt="J'adore Eau de Parfum"></div>
       <div class="testimonial-body">
-        <div class="rv-stars">?????</div>
+        <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
         <h3>J'adore Eau de Parfum</h3>
         <p class="testimonial-quote">"The signature scent I've been searching for. It's sophisticated, floral, and lingers beautifully throughout the day. It makes me feel incredibly empowered and chic."</p>
         <p class="testimonial-author">SOPHIA L.</p>
@@ -64,7 +64,7 @@
     <div class="testimonial-card">
       <div class="testimonial-img"><img src="assets/images/review_portrait_3.png" alt="Iconic Bar Jacket"></div>
       <div class="testimonial-body">
-        <div class="rv-stars">?????</div>
+        <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
         <h3>Iconic Bar Jacket</h3>
         <p class="testimonial-quote">"The fit is impeccable. It sculptures the body beautifully and feels incredibly luxurious. A true staple piece that defines the Dior silhouette."</p>
         <p class="testimonial-author">CAMILLE R.</p>
@@ -74,7 +74,7 @@
     <div class="testimonial-card">
       <div class="testimonial-img"><img src="assets/images/review_portrait_2.png" alt="Rouge Dior Lipstick"></div>
       <div class="testimonial-body">
-        <div class="rv-stars">?????</div>
+        <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
         <h3>Rouge Dior Lipstick</h3>
         <p class="testimonial-quote">"The most comfortable matte lipstick I've ever worn. The color payoff is intense, and the packaging itself is a work of art. 999 is my perfect red."</p>
         <p class="testimonial-author">ISABELLA M.</p>
@@ -84,7 +84,7 @@
     <div class="testimonial-card testimonial-wide">
       <div class="testimonial-img"><img src="assets/images/leather_handbag.png" alt="Dior Book Tote"></div>
       <div class="testimonial-body">
-        <div class="rv-stars">?????</div>
+        <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
         <h3>Dior Book Tote</h3>
         <p class="testimonial-quote">"Spacious, incredibly stylish, and the embroidery detail is breathtaking. It's my go-to travel companion. Every detail feels meticulously crafted, making everyday journeys feel exceptionally luxurious."</p>
         <p class="testimonial-author">VICTORIA H.</p>
@@ -99,9 +99,17 @@
 </section>
 
 <footer class="footer-dark">
-  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">Â© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})</script>
+<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if(menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+</script>
 </body>
 </html>
 

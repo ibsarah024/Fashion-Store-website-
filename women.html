@@ -19,7 +19,7 @@
     <li><a href="fragrances.html">Fragrances</a></li>
     <li><a href="review.html">Review</a></li>
   </ul>
-  <div class="nav-icons"><a href="cart.html">🛒</a></div>
+  <div class="nav-icons"><a href="cart.html">&#128722;</a><button class="menu-toggle" id="menu-toggle">&#9776;</button></div>
 </nav>
 
 <section class="collection-hero reveal">
@@ -64,6 +64,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     setTimeout(()=>{cards.forEach(c=>{const show=f==='all'||c.dataset.cat===f;c.style.display=show?'':'none';if(show){setTimeout(()=>{c.style.opacity='1';c.style.transform='none'},50)}})},300);
   })});
 });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if(menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
 </script>
 </body>
 </html>

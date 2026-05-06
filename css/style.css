@@ -42,7 +42,7 @@ body{font-family:'Quicksand',sans-serif;font-weight:500;background:var(--bg);col
 .nav-icons a:hover{transform:scale(1.15)}
 
 /* HERO */
-.hero{position:relative;min-height:45vh;background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url('images/hero_boutique.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero{position:relative;min-height:45vh;background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url('../assets/images/hero_boutique.png') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
 .hero::before{content:'';position:absolute;inset:0;background:rgba(59,0,14,.5)}
 .hero-content{position:relative;z-index:1;max-width:550px;padding:1.5rem;animation:fadeUp .8s ease both}
 .hero h1{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:700;margin-bottom:.8rem}
