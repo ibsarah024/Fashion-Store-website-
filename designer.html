@@ -23,10 +23,13 @@
 </nav>
 
 <section class="collection-hero reveal">
-  <div class="collection-hero-content"><p class="story-tag">COLLECTION</p><h1>Designer</h1><p>Explore our curated selection of designer pieces crafted for the modern individual.</p></div>
+  <div class="collection-hero-content">
+    <p class="story-tag">COLLECTION</p>
+    <h1>Designer</h1>
+    <p>Explore our curated selection of designer pieces crafted for the modern individual.</p>
+  </div>
 </section>
 
-<!-- FILTER BAR -->
 <div class="filter-bar reveal">
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="bags">Bags</button>
@@ -35,46 +38,24 @@
 </div>
 
 <section class="section">
-  <div class="shop-grid" id="shopGrid">
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_new_1.jpg" alt="Golden Couture Ball Gown"></div></a><div class="shop-card-body"><h3>Golden Couture Ball Gown</h3><p class="shop-desc">Breathtaking gold taffeta gown with intricate embroidery, dramatic volume, and matching hat.</p><div class="shop-card-footer"><span class="shop-price">$12,000</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/burgundy_ruffle_gown.jpg" alt="Burgundy Ruffle Couture Gown"></div></a><div class="shop-card-body"><h3>Burgundy Ruffle Couture Gown</h3><p class="shop-desc">Dramatic tiered gown featuring rich burgundy taffeta ruffles, puff sleeves, and contrasting black lace details.</p><div class="shop-card-footer"><span class="shop-price">$24,000</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_new_3.jpg" alt="Azure Brocade Pannier Gown"></div></a><div class="shop-card-body"><h3>Azure Brocade Pannier Gown</h3><p class="shop-desc">Dramatic pale blue gown with a voluminous pleated skirt and delicate floral appliqués.</p><div class="shop-card-footer"><span class="shop-price">$15,000</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/white_structural_gown.jpg" alt="White Origami Couture Gown"></div></a><div class="shop-card-body"><h3>White Origami Couture Gown</h3><p class="shop-desc">Striking structural white silk gown featuring origami folds, floral embroidery, and an architectural silhouette.</p><div class="shop-card-footer"><span class="shop-price">$21,000</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_new_5.jpg" alt="Blush Taffeta Corset Gown"></div></a><div class="shop-card-body"><h3>Blush Taffeta Corset Gown</h3><p class="shop-desc">Romantic blush taffeta gown with contrasting black lace corset and cascade floral embroidery.</p><div class="shop-card-footer"><span class="shop-price">$14,500</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_bag_1.jpg" alt="Olive Padlock Satchel"></div></a><div class="shop-card-body"><h3>Olive Padlock Satchel</h3><p class="shop-desc">Supple olive green leather satchel featuring a signature oversized gold padlock and key detail.</p><div class="shop-card-footer"><span class="shop-price">$3,500</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_bag_2.jpg" alt="Croc-Embossed Backpack"></div></a><div class="shop-card-body"><h3>Croc-Embossed Backpack</h3><p class="shop-desc">Structured brown crocodile-embossed leather backpack with gold-finish hardware and top handle.</p><div class="shop-card-footer"><span class="shop-price">$4,200</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_bag_3.jpg" alt="Burgundy Croc Top Handle"></div></a><div class="shop-card-body"><h3>Burgundy Croc Top Handle</h3><p class="shop-desc">Striking deep burgundy crocodile-embossed leather handbag with vintage-inspired gold detailing.</p><div class="shop-card-footer"><span class="shop-price">$4,800</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_bag_4.jpg" alt="Vintage Leather Saddle Bag"></div></a><div class="shop-card-body"><h3>Vintage Leather Saddle Bag</h3><p class="shop-desc">Slouchy distressed brown leather saddle bag accented with braided trim and antique key charms.</p><div class="shop-card-footer"><span class="shop-price">$3,800</span></div></div></div>
-    <div class="shop-card" data-cat="accessories"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_accessory_1.png" alt="Gold Interlocking Bracelet"></div></a><div class="shop-card-body"><h3>Gold Interlocking Bracelet</h3><p class="shop-desc">Elegant gold-finish metal link bracelet featuring a central star motif, perfect for layering with statement rings.</p><div class="shop-card-footer"><span class="shop-price">$850</span></div></div></div>
-    <div class="shop-card" data-cat="accessories"><a href="product.html"><div class="shop-card-img"><img src="assets/images/designer_accessory_2.jpg" alt="Sculptural Gold Cuff"></div></a><div class="shop-card-body"><h3>Sculptural Gold Cuff</h3><p class="shop-desc">Breathtaking golden cuff bracelet sculpted with intricate classical motifs, finished with a single teardrop pearl.</p><div class="shop-card-footer"><span class="shop-price">$1,250</span></div></div></div>
+  <div class="shop-grid stagger" id="shopGrid">
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=golden-couture-ball-gown"><div class="shop-card-img"><img src="assets/images/designer_new_1.jpg" alt="Golden Couture Ball Gown"></div></a><div class="shop-card-body"><h3>Golden Couture Ball Gown</h3><p class="shop-desc">Breathtaking gold taffeta gown with intricate embroidery, dramatic volume, and matching hat.</p><div class="shop-card-footer"><span class="shop-price">$12,000</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=burgundy-ruffle-couture-gown"><div class="shop-card-img"><img src="assets/images/burgundy_ruffle_gown.jpg" alt="Burgundy Ruffle Couture Gown"></div></a><div class="shop-card-body"><h3>Burgundy Ruffle Couture Gown</h3><p class="shop-desc">Dramatic tiered gown featuring rich burgundy taffeta ruffles, puff sleeves, and contrasting black lace details.</p><div class="shop-card-footer"><span class="shop-price">$24,000</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=azure-brocade-pannier-gown"><div class="shop-card-img"><img src="assets/images/designer_new_3.jpg" alt="Azure Brocade Pannier Gown"></div></a><div class="shop-card-body"><h3>Azure Brocade Pannier Gown</h3><p class="shop-desc">Dramatic pale blue gown with a voluminous pleated skirt and delicate floral appliqués.</p><div class="shop-card-footer"><span class="shop-price">$15,000</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=white-origami-couture-gown"><div class="shop-card-img"><img src="assets/images/white_structural_gown.jpg" alt="White Origami Couture Gown"></div></a><div class="shop-card-body"><h3>White Origami Couture Gown</h3><p class="shop-desc">Striking structural white silk gown featuring origami folds, floral embroidery, and an architectural silhouette.</p><div class="shop-card-footer"><span class="shop-price">$21,000</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=blush-taffeta-corset-gown"><div class="shop-card-img"><img src="assets/images/designer_new_5.jpg" alt="Blush Taffeta Corset Gown"></div></a><div class="shop-card-body"><h3>Blush Taffeta Corset Gown</h3><p class="shop-desc">Romantic blush taffeta gown with contrasting black lace corset and cascade floral embroidery.</p><div class="shop-card-footer"><span class="shop-price">$14,500</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=olive-padlock-satchel"><div class="shop-card-img"><img src="assets/images/designer_bag_1.jpg" alt="Olive Padlock Satchel"></div></a><div class="shop-card-body"><h3>Olive Padlock Satchel</h3><p class="shop-desc">Supple olive green leather satchel featuring a signature oversized gold padlock and key detail.</p><div class="shop-card-footer"><span class="shop-price">$3,500</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=croc-embossed-backpack"><div class="shop-card-img"><img src="assets/images/designer_bag_2.jpg" alt="Croc-Embossed Backpack"></div></a><div class="shop-card-body"><h3>Croc-Embossed Backpack</h3><p class="shop-desc">Structured brown crocodile-embossed leather backpack with gold-finish hardware and top handle.</p><div class="shop-card-footer"><span class="shop-price">$4,200</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=burgundy-croc-top-handle"><div class="shop-card-img"><img src="assets/images/designer_bag_3.jpg" alt="Burgundy Croc Top Handle"></div></a><div class="shop-card-body"><h3>Burgundy Croc Top Handle</h3><p class="shop-desc">Striking deep burgundy crocodile-embossed leather handbag with vintage-inspired gold detailing.</p><div class="shop-card-footer"><span class="shop-price">$4,800</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=vintage-leather-saddle-bag"><div class="shop-card-img"><img src="assets/images/designer_bag_4.jpg" alt="Vintage Leather Saddle Bag"></div></a><div class="shop-card-body"><h3>Vintage Leather Saddle Bag</h3><p class="shop-desc">Slouchy distressed brown leather saddle bag accented with braided trim and antique key charms.</p><div class="shop-card-footer"><span class="shop-price">$3,800</span></div></div></div>
+    <div class="shop-card" data-cat="accessories"><a href="product.html?id=gold-interlocking-bracelet"><div class="shop-card-img"><img src="assets/images/designer_accessory_1.png" alt="Gold Interlocking Bracelet"></div></a><div class="shop-card-body"><h3>Gold Interlocking Bracelet</h3><p class="shop-desc">Elegant gold-finish metal link bracelet featuring a central star motif, perfect for layering with statement rings.</p><div class="shop-card-footer"><span class="shop-price">$850</span></div></div></div>
+    <div class="shop-card" data-cat="accessories"><a href="product.html?id=sculptural-gold-cuff"><div class="shop-card-img"><img src="assets/images/designer_accessory_2.jpg" alt="Sculptural Gold Cuff"></div></a><div class="shop-card-body"><h3>Sculptural Gold Cuff</h3><p class="shop-desc">Breathtaking golden cuff bracelet sculpted with intricate classical motifs, finished with a single teardrop pearl.</p><div class="shop-card-footer"><span class="shop-price">$1,250</span></div></div></div>
   </div>
 </section>
 
 <footer class="footer-dark">
   <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
-  const o=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:.15});
-  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el));
-  const btns=document.querySelectorAll('.filter-btn');
-  const cards=document.querySelectorAll('.shop-card');
-  btns.forEach(btn=>{btn.addEventListener('click',()=>{
-    btns.forEach(b=>b.classList.remove('active'));btn.classList.add('active');
-    const f=btn.dataset.filter;
-    cards.forEach(c=>{c.style.transition='opacity .3s,transform .3s';c.style.opacity='0';c.style.transform='scale(.95)'});
-    setTimeout(()=>{cards.forEach(c=>{const show=f==='all'||c.dataset.cat===f;c.style.display=show?'':'none';if(show){setTimeout(()=>{c.style.opacity='1';c.style.transform='none'},50)}})},300);
-  })});
-});
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if(menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
-

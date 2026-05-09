@@ -25,28 +25,15 @@
 <section class="section cart-page">
   <h1 class="page-title fade-in">Shopping Bag</h1>
   <div class="cart-layout">
-    <div class="cart-items">
-      <div class="cart-item reveal">
-        <div class="cart-item-img"><img src="assets/images/leather_handbag.png" alt="Lady Dior Handbag"></div>
-        <div class="cart-item-details">
-          <div class="cart-item-top"><div><h3>Lady Dior Handbag</h3><p class="cart-item-sub">Black Cannage Lambskin</p><div class="cart-tags"><span class="cart-tag">Size: Medium</span><span class="cart-tag">Color: ⚫</span></div></div><button class="cart-remove">✕</button></div>
-          <div class="cart-item-bottom"><div class="qty-controls"><button class="qty-btn">−</button><span class="qty-num">1</span><button class="qty-btn">+</button></div><span class="cart-item-price">$5,900.00</span></div>
-        </div>
-      </div>
-      <div class="cart-item reveal">
-        <div class="cart-item-img"><img src="assets/images/fragrance_bottle_1.png" alt="Miss Dior Eau de Parfum"></div>
-        <div class="cart-item-details">
-          <div class="cart-item-top"><div><h3>Miss Dior Eau de Parfum</h3><p class="cart-item-sub">Floral and Fresh Notes</p><div class="cart-tags"><span class="cart-tag">Size: 100 ml</span></div></div><button class="cart-remove">✕</button></div>
-          <div class="cart-item-bottom"><div class="qty-controls"><button class="qty-btn">−</button><span class="qty-num">2</span><button class="qty-btn">+</button></div><span class="cart-item-price">$330.00</span></div>
-        </div>
-      </div>
-    </div>
+    <!-- Items rendered by script.js -->
+    <div class="cart-items" id="cart-items-container"></div>
+
     <div class="order-summary reveal-right">
       <h2>Order Summary</h2>
-      <div class="summary-row"><span>Subtotal</span><span>$6,230.00</span></div>
+      <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">$0.00</span></div>
       <div class="summary-row"><span>Estimated Shipping</span><span>Complimentary</span></div>
       <div class="summary-row"><span>Estimated Taxes</span><span>Calculated at checkout</span></div>
-      <div class="summary-row summary-total"><span>Total</span><span>$6,230.00</span></div>
+      <div class="summary-row summary-total"><span>Total</span><span id="cart-total">$0.00</span></div>
       <a href="checkout.html" class="btn-accent btn-full">Proceed to Checkout →</a>
       <p class="summary-note">Secure checkout provided by DIOR. Complimentary returns within 30 days.</p>
     </div>
@@ -56,25 +43,16 @@
 <section class="section reveal">
   <h2 class="section-title">You May Also Like</h2>
   <div class="arrivals-grid stagger">
-    <a href="product.html" class="arrival-card"><div class="arrival-img"><img src="assets/images/velvet_blazer.png" alt="Bar Jacket"></div><p class="arrival-name">Bar Jacket</p><p class="arrival-sub">Burgundy Velvet</p><p class="arrival-price">$3,200.00</p></a>
-    <a href="product.html" class="arrival-card"><div class="arrival-img"><img src="assets/images/sunglasses.png" alt="DiorPacific B1U"></div><p class="arrival-name">DiorPacific B1U</p><p class="arrival-sub">Square Sunglasses</p><p class="arrival-price">$510.00</p></a>
-    <a href="product.html" class="arrival-card"><div class="arrival-img"><img src="assets/images/pearl_earrings.png" alt="Dior Tribales Earrings"></div><p class="arrival-name">Dior Tribales Earrings</p><p class="arrival-sub">Gold-Finish Metal</p><p class="arrival-price">$650.00</p></a>
-    <a href="product.html" class="arrival-card"><div class="arrival-img"><img src="assets/images/leather_clutch.png" alt="Miss Dior Mini Bag"></div><p class="arrival-name">Miss Dior Mini Bag</p><p class="arrival-sub">Black Goatskin</p><p class="arrival-price">$2,100.00</p></a>
+    <a href="product.html?id=bar-jacket" class="arrival-card"><div class="arrival-img"><img src="assets/images/velvet_blazer.png" alt="Bar Jacket"></div><p class="arrival-name">Bar Jacket</p><p class="arrival-sub">Burgundy Velvet</p><p class="arrival-price">$3,200.00</p></a>
+    <a href="product.html?id=diorpacific-b1u" class="arrival-card"><div class="arrival-img"><img src="assets/images/sunglasses.png" alt="DiorPacific B1U"></div><p class="arrival-name">DiorPacific B1U</p><p class="arrival-sub">Square Sunglasses</p><p class="arrival-price">$510.00</p></a>
+    <a href="product.html?id=dior-tribales-earrings" class="arrival-card"><div class="arrival-img"><img src="assets/images/pearl_earrings.png" alt="Dior Tribales Earrings"></div><p class="arrival-name">Dior Tribales Earrings</p><p class="arrival-sub">Gold-Finish Metal</p><p class="arrival-price">$650.00</p></a>
+    <a href="product.html?id=miss-dior-mini-bag" class="arrival-card"><div class="arrival-img"><img src="assets/images/leather_clutch.png" alt="Miss Dior Mini Bag"></div><p class="arrival-name">Miss Dior Mini Bag</p><p class="arrival-sub">Black Goatskin</p><p class="arrival-price">$2,100.00</p></a>
   </div>
 </section>
 
 <footer class="footer-dark">
   <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if(menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
-

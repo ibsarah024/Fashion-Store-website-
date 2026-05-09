@@ -12,6 +12,7 @@
 <nav class="navbar">
   <a class="navbar-brand" href="index.html">DIOR</a>
   <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
     <li><a href="designer.html">Designer</a></li>
     <li><a href="women.html">Women</a></li>
     <li><a href="fragrances.html">Fragrances</a></li>
@@ -26,30 +27,50 @@
       <div class="checkout-card reveal">
         <h2>Shipping Address</h2>
         <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-        <div class="form-row"><div class="form-group"><label>First Name</label><input type="text" placeholder="First Name"></div><div class="form-group"><label>Last Name</label><input type="text" placeholder="Last Name"></div></div>
+        <div class="form-row">
+          <div class="form-group"><label>First Name</label><input type="text" placeholder="First Name"></div>
+          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last Name"></div>
+        </div>
         <div class="form-group"><label>Address</label><input type="text" placeholder="Street Address"></div>
-        <div class="form-row"><div class="form-group"><label>City</label><input type="text" placeholder="City"></div><div class="form-group"><label>ZIP / Postal Code</label><input type="text" placeholder="ZIP Code"></div></div>
+        <div class="form-row">
+          <div class="form-group"><label>City</label><input type="text" placeholder="City"></div>
+          <div class="form-group"><label>ZIP / Postal Code</label><input type="text" placeholder="ZIP Code"></div>
+        </div>
       </div>
       <div class="checkout-card reveal">
         <h2>Delivery Method</h2>
-        <label class="delivery-option selected"><input type="radio" name="delivery" checked><div class="delivery-info"><strong>Standard Delivery</strong><span>3–5 Business Days</span></div><span class="delivery-price">Free</span></label>
-        <label class="delivery-option"><input type="radio" name="delivery"><div class="delivery-info"><strong>Express Delivery</strong><span>1–2 Business Days</span></div><span class="delivery-price">$25.00</span></label>
+        <label class="delivery-option selected">
+          <input type="radio" name="delivery" checked>
+          <div class="delivery-info"><strong>Standard Delivery</strong><span>3–5 Business Days</span></div>
+          <span class="delivery-price">Free</span>
+        </label>
+        <label class="delivery-option">
+          <input type="radio" name="delivery">
+          <div class="delivery-info"><strong>Express Delivery</strong><span>1–2 Business Days</span></div>
+          <span class="delivery-price">$25.00</span>
+        </label>
       </div>
       <div class="checkout-card reveal">
         <h2>Payment</h2>
         <div class="form-group"><label>Card Number</label><input type="text" placeholder="&#128179; 0000 0000 0000 0000"></div>
-        <div class="form-row"><div class="form-group"><label>Expiry Date</label><input type="text" placeholder="MM/YY"></div><div class="form-group"><label>CVV</label><input type="text" placeholder="123"></div></div>
+        <div class="form-row">
+          <div class="form-group"><label>Expiry Date</label><input type="text" placeholder="MM/YY"></div>
+          <div class="form-group"><label>CVV</label><input type="text" placeholder="123"></div>
+        </div>
       </div>
     </div>
+
     <div class="order-summary checkout-summary reveal-right">
       <h2>Order Summary</h2>
-      <div class="summary-item"><div class="summary-item-img"><img src="assets/images/leather_handbag.png" alt="Lady Dior Bag"></div><div class="summary-item-info"><strong>Lady Dior Bag</strong><span>Powder Pink</span></div><span class="summary-item-price">$5,500</span></div>
-      <div class="summary-item"><div class="summary-item-img"><img src="assets/images/fragrance_bottle_1.png" alt="J'adore Eau de Parfum"></div><div class="summary-item-info"><strong>J'adore Eau de Parfum</strong><span>100ml</span></div><span class="summary-item-price">$165</span></div>
+
+      <!-- Items injected by script.js -->
+      <div id="checkout-items"></div>
+
       <div class="summary-divider"></div>
-      <div class="summary-row"><span>Subtotal</span><span>$5,665.00</span></div>
-      <div class="summary-row"><span>Shipping</span><span>Free</span></div>
+      <div class="summary-row"><span>Subtotal</span><span id="checkout-subtotal">$0.00</span></div>
+      <div class="summary-row"><span>Shipping</span><span id="checkout-shipping">Free</span></div>
       <div class="summary-row"><span>Taxes</span><span>$0.00</span></div>
-      <div class="summary-row summary-total"><span>Total</span><span>$5,665.00</span></div>
+      <div class="summary-row summary-total"><span>Total</span><span id="checkout-total">$0.00</span></div>
       <button id="purchaseBtn" class="btn-accent btn-full">Complete Purchase</button>
       <p class="summary-note">&#128274; Secure Checkout</p>
     </div>
@@ -59,26 +80,6 @@
 <footer class="footer-dark">
   <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
-  const o=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:.15});
-  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el));
-
-  const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3');
-  document.getElementById('purchaseBtn').addEventListener('click',()=>{
-    audio.play();
-    setTimeout(()=>{window.location.href='confirmation.html'},1200);
-  });
-});
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if(menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
-

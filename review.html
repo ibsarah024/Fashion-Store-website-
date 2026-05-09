@@ -22,26 +22,23 @@
   <div class="nav-icons"><a href="cart.html">&#128722;</a><button class="menu-toggle" id="menu-toggle">&#9776;</button></div>
 </nav>
 
-<!-- HERO -->
 <section class="review-hero reveal">
   <h1><em>Customer Testimonials</em></h1>
   <p>Discover the elegance and sophistication of DIOR through the experiences of our valued clients. A curated collection of thoughts on our finest pieces.</p>
 </section>
 
-<!-- FILTER TABS -->
 <div class="filter-bar reveal">
-  <button class="filter-btn active">All Reviews</button>
-  <button class="filter-btn">Women</button>
-  <button class="filter-btn">Designer</button>
-  <button class="filter-btn">Fragrance</button>
-  <button class="filter-btn">Bags</button>
+  <button class="filter-btn active" data-filter="all">All Reviews</button>
+  <button class="filter-btn" data-filter="women">Women</button>
+  <button class="filter-btn" data-filter="designer">Designer</button>
+  <button class="filter-btn" data-filter="fragrance">Fragrance</button>
+  <button class="filter-btn" data-filter="bags">Bags</button>
 </div>
 
-<!-- TESTIMONIALS GRID -->
 <section class="section">
   <div class="testimonials-grid stagger reveal">
 
-    <div class="testimonial-card">
+    <div class="testimonial-card" data-cat="bags">
       <div class="testimonial-img"><img src="assets/images/review_portrait_1.png" alt="Lady Dior Handbag"></div>
       <div class="testimonial-body">
         <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
@@ -51,7 +48,7 @@
       </div>
     </div>
 
-    <div class="testimonial-card">
+    <div class="testimonial-card" data-cat="fragrance">
       <div class="testimonial-img"><img src="assets/images/fragrance_bottle_1.png" alt="J'adore Eau de Parfum"></div>
       <div class="testimonial-body">
         <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
@@ -61,7 +58,7 @@
       </div>
     </div>
 
-    <div class="testimonial-card">
+    <div class="testimonial-card" data-cat="women">
       <div class="testimonial-img"><img src="assets/images/review_portrait_3.png" alt="Iconic Bar Jacket"></div>
       <div class="testimonial-body">
         <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
@@ -71,7 +68,7 @@
       </div>
     </div>
 
-    <div class="testimonial-card">
+    <div class="testimonial-card" data-cat="designer">
       <div class="testimonial-img"><img src="assets/images/review_portrait_2.png" alt="Rouge Dior Lipstick"></div>
       <div class="testimonial-body">
         <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
@@ -81,7 +78,7 @@
       </div>
     </div>
 
-    <div class="testimonial-card testimonial-wide">
+    <div class="testimonial-card testimonial-wide" data-cat="bags">
       <div class="testimonial-img"><img src="assets/images/leather_handbag.png" alt="Dior Book Tote"></div>
       <div class="testimonial-body">
         <div class="rv-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
@@ -101,15 +98,6 @@
 <footer class="footer-dark">
   <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver((e)=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:0.15});document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el))})
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if(menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
-

@@ -23,10 +23,13 @@
 </nav>
 
 <section class="collection-hero reveal">
-  <div class="collection-hero-content"><p class="story-tag">COLLECTION</p><h1>Women</h1><p>Timeless elegance meets contemporary style in our women's collection.</p></div>
+  <div class="collection-hero-content">
+    <p class="story-tag">COLLECTION</p>
+    <h1>Women</h1>
+    <p>Timeless elegance meets contemporary style in our women's collection.</p>
+  </div>
 </section>
 
-<!-- FILTER BAR -->
 <div class="filter-bar reveal">
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="bags">Bags</button>
@@ -35,44 +38,22 @@
 </div>
 
 <section class="section">
-  <div class="shop-grid" id="shopGrid">
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/velvet_blazer.png" alt="Bar Jacket"></div></a><div class="shop-card-body"><h3>Bar Jacket</h3><p class="shop-desc">Iconic single-breasted silhouette in deep burgundy velvet, embodying Dior elegance.</p><div class="shop-card-footer"><span class="shop-price">$3,200</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/leopard_scarf_ensemble.jpg" alt="Runway Leopard Scarf Ensemble"></div></a><div class="shop-card-body"><h3>Runway Leopard Scarf Ensemble</h3><p class="shop-desc">Sophisticated leather pencil skirt paired with a dramatic two-tone duster coat and bold leopard print scarf.</p><div class="shop-card-footer"><span class="shop-price">$6,800</span></div></div></div>
-    <div class="shop-card" data-cat="clothes"><a href="product.html"><div class="shop-card-img"><img src="assets/images/grey_tweed_ensemble.jpg" alt="Tweed Coat Ensemble"></div></a><div class="shop-card-body"><h3>Tweed Coat Ensemble</h3><p class="shop-desc">Classic grey tweed dress accompanied by a matching tailored overcoat.</p><div class="shop-card-footer"><span class="shop-price">$5,800</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/leather_handbag.png" alt="Dior Toujours Bag"></div></a><div class="shop-card-body"><h3>Dior Toujours Bag</h3><p class="shop-desc">Spacious and elegant, featuring signature Cannage stitching and 'D.I.O.R.' charms.</p><div class="shop-card-footer"><span class="shop-price">$4,200</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/leather_clutch.png" alt="Miss Dior Mini Bag"></div></a><div class="shop-card-body"><h3>Miss Dior Mini Bag</h3><p class="shop-desc">Compact evening essential crafted from smooth leather with a refined clasp.</p><div class="shop-card-footer"><span class="shop-price">$2,100</span></div></div></div>
-    <div class="shop-card" data-cat="bags"><a href="product.html"><div class="shop-card-img"><img src="assets/images/saddle_bag.png" alt="Micro Saddle Bag"></div></a><div class="shop-card-body"><h3>Micro Saddle Bag</h3><p class="shop-desc">A miniature reimagining of the classic, perfect for carrying the essentials.</p><div class="shop-card-footer"><span class="shop-price">$3,500</span></div></div></div>
-    <div class="shop-card" data-cat="accessories"><a href="product.html"><div class="shop-card-img"><img src="assets/images/pearl_earrings.png" alt="Dior Tribales Earrings"></div></a><div class="shop-card-body"><h3>Dior Tribales Earrings</h3><p class="shop-desc">The beloved asymmetric design highlighting lustrous resin pearls.</p><div class="shop-card-footer"><span class="shop-price">$650</span></div></div></div>
-    <div class="shop-card" data-cat="accessories"><a href="product.html"><div class="shop-card-img"><img src="assets/images/sunglasses.png" alt="DiorPacific B1U"></div></a><div class="shop-card-body"><h3>DiorPacific B1U</h3><p class="shop-desc">Bold butterfly sunglasses with a modern acetate frame and tinted lenses.</p><div class="shop-card-footer"><span class="shop-price">$510</span></div></div></div>
-    <div class="shop-card" data-cat="accessories"><a href="product.html"><div class="shop-card-img"><img src="assets/images/silk_scarf.png" alt="Toile de Jouy Mitzah"></div></a><div class="shop-card-body"><h3>Toile de Jouy Mitzah</h3><p class="shop-desc">Elegant silk twill scarf adorned with the House's emblematic motif.</p><div class="shop-card-footer"><span class="shop-price">$290</span></div></div></div>
+  <div class="shop-grid stagger" id="shopGrid">
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=bar-jacket"><div class="shop-card-img"><img src="assets/images/velvet_blazer.png" alt="Bar Jacket"></div></a><div class="shop-card-body"><h3>Bar Jacket</h3><p class="shop-desc">Iconic single-breasted silhouette in deep burgundy velvet, embodying Dior elegance.</p><div class="shop-card-footer"><span class="shop-price">$3,200</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=leopard-scarf-ensemble"><div class="shop-card-img"><img src="assets/images/leopard_scarf_ensemble.jpg" alt="Runway Leopard Scarf Ensemble"></div></a><div class="shop-card-body"><h3>Runway Leopard Scarf Ensemble</h3><p class="shop-desc">Sophisticated leather pencil skirt paired with a dramatic two-tone duster coat and bold leopard print scarf.</p><div class="shop-card-footer"><span class="shop-price">$6,800</span></div></div></div>
+    <div class="shop-card" data-cat="clothes"><a href="product.html?id=tweed-coat-ensemble"><div class="shop-card-img"><img src="assets/images/grey_tweed_ensemble.jpg" alt="Tweed Coat Ensemble"></div></a><div class="shop-card-body"><h3>Tweed Coat Ensemble</h3><p class="shop-desc">Classic grey tweed dress accompanied by a matching tailored overcoat.</p><div class="shop-card-footer"><span class="shop-price">$5,800</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=dior-toujours-bag"><div class="shop-card-img"><img src="assets/images/leather_handbag.png" alt="Dior Toujours Bag"></div></a><div class="shop-card-body"><h3>Dior Toujours Bag</h3><p class="shop-desc">Spacious and elegant, featuring signature Cannage stitching and 'D.I.O.R.' charms.</p><div class="shop-card-footer"><span class="shop-price">$4,200</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=miss-dior-mini-bag"><div class="shop-card-img"><img src="assets/images/leather_clutch.png" alt="Miss Dior Mini Bag"></div></a><div class="shop-card-body"><h3>Miss Dior Mini Bag</h3><p class="shop-desc">Compact evening essential crafted from smooth leather with a refined clasp.</p><div class="shop-card-footer"><span class="shop-price">$2,100</span></div></div></div>
+    <div class="shop-card" data-cat="bags"><a href="product.html?id=micro-saddle-bag"><div class="shop-card-img"><img src="assets/images/saddle_bag.png" alt="Micro Saddle Bag"></div></a><div class="shop-card-body"><h3>Micro Saddle Bag</h3><p class="shop-desc">A miniature reimagining of the classic, perfect for carrying the essentials.</p><div class="shop-card-footer"><span class="shop-price">$3,500</span></div></div></div>
+    <div class="shop-card" data-cat="accessories"><a href="product.html?id=dior-tribales-earrings"><div class="shop-card-img"><img src="assets/images/pearl_earrings.png" alt="Dior Tribales Earrings"></div></a><div class="shop-card-body"><h3>Dior Tribales Earrings</h3><p class="shop-desc">The beloved asymmetric design highlighting lustrous resin pearls.</p><div class="shop-card-footer"><span class="shop-price">$650</span></div></div></div>
+    <div class="shop-card" data-cat="accessories"><a href="product.html?id=diorpacific-b1u"><div class="shop-card-img"><img src="assets/images/sunglasses.png" alt="DiorPacific B1U"></div></a><div class="shop-card-body"><h3>DiorPacific B1U</h3><p class="shop-desc">Bold butterfly sunglasses with a modern acetate frame and tinted lenses.</p><div class="shop-card-footer"><span class="shop-price">$510</span></div></div></div>
+    <div class="shop-card" data-cat="accessories"><a href="product.html?id=toile-de-jouy-mitzah"><div class="shop-card-img"><img src="assets/images/silk_scarf.png" alt="Toile de Jouy Mitzah"></div></a><div class="shop-card-body"><h3>Toile de Jouy Mitzah</h3><p class="shop-desc">Elegant silk twill scarf adorned with the House's emblematic motif.</p><div class="shop-card-footer"><span class="shop-price">$290</span></div></div></div>
   </div>
 </section>
 
 <footer class="footer-dark">
   <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
-  const o=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');o.unobserve(el.target)}})},{threshold:.15});
-  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.stagger').forEach(el=>o.observe(el));
-  const btns=document.querySelectorAll('.filter-btn');
-  const cards=document.querySelectorAll('.shop-card');
-  btns.forEach(btn=>{btn.addEventListener('click',()=>{
-    btns.forEach(b=>b.classList.remove('active'));btn.classList.add('active');
-    const f=btn.dataset.filter;
-    cards.forEach(c=>{c.style.transition='opacity .3s,transform .3s';c.style.opacity='0';c.style.transform='scale(.95)'});
-    setTimeout(()=>{cards.forEach(c=>{const show=f==='all'||c.dataset.cat===f;c.style.display=show?'':'none';if(show){setTimeout(()=>{c.style.opacity='1';c.style.transform='none'},50)}})},300);
-  })});
-});
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-  if(menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
-
