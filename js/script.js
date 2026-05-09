@@ -1031,13 +1031,57 @@ document.addEventListener('DOMContentLoaded', function () {
       purchaseBtn.disabled = true;
       var audio = new Audio('assets/audio/success.mp3');
       audio.play().catch(function () { });
-      try { localStorage.removeItem('diorCart'); } catch (e) { }
+      try {
+        var orderData = {
+          items: cart,
+          total: document.getElementById('checkout-total') ? document.getElementById('checkout-total').textContent : '$0.00',
+          subtotal: document.getElementById('checkout-subtotal') ? document.getElementById('checkout-subtotal').textContent : '$0.00',
+          shipping: document.getElementById('checkout-shipping') ? document.getElementById('checkout-shipping').textContent : 'Complimentary',
+          address: {
+            first: document.querySelector('input[placeholder="First Name"]') ? document.querySelector('input[placeholder="First Name"]').value : 'Jane',
+            last: document.querySelector('input[placeholder="Last Name"]') ? document.querySelector('input[placeholder="Last Name"]').value : 'Doe',
+            street: document.querySelector('input[placeholder="Street Address"]') ? document.querySelector('input[placeholder="Street Address"]').value : '123 Luxury Avenue',
+            city: document.querySelector('input[placeholder="City"]') ? document.querySelector('input[placeholder="City"]').value : 'New York',
+            zip: document.querySelector('input[placeholder="ZIP Code"]') ? document.querySelector('input[placeholder="ZIP Code"]').value : '10022'
+          }
+        };
+        localStorage.setItem('diorLastOrder', JSON.stringify(orderData));
+        localStorage.removeItem('diorCart');
+      } catch (e) { }
       setTimeout(function () { window.location.href = 'confirmation.html'; }, 1200);
     });
   }
 
 
-  /* ── 15. Confirmation checkmark ────────────────────────────── */
+  /* ── 15. Order Confirmation Page ────────────────────────────── */
+  if (document.getElementById('confirm-summary-items')) {
+    try {
+      var lastOrder = JSON.parse(localStorage.getItem('diorLastOrder'));
+      if (lastOrder) {
+        var container = document.getElementById('confirm-summary-items');
+        container.innerHTML = '';
+        lastOrder.items.forEach(function (item) {
+          var div = document.createElement('div');
+          div.className = 'summary-item';
+          div.innerHTML = '<div class="summary-item-img"><img src="' + item.image + '" alt="' + item.name + '"></div>' +
+            '<div class="summary-item-info"><strong>' + item.name + '</strong><span>' + (item.desc || '') + '</span></div>' +
+            '<span class="summary-item-price">' + item.price + '</span>';
+          container.appendChild(div);
+        });
+
+        if (document.getElementById('confirm-subtotal')) document.getElementById('confirm-subtotal').textContent = lastOrder.subtotal;
+        if (document.getElementById('confirm-shipping')) document.getElementById('confirm-shipping').textContent = lastOrder.shipping;
+        if (document.getElementById('confirm-total')) document.getElementById('confirm-total').textContent = lastOrder.total;
+
+        if (lastOrder.address) {
+          if (document.getElementById('confirm-name')) document.getElementById('confirm-name').textContent = lastOrder.address.first + ' ' + lastOrder.address.last;
+          if (document.getElementById('confirm-street')) document.getElementById('confirm-street').textContent = lastOrder.address.street;
+          if (document.getElementById('confirm-city-zip')) document.getElementById('confirm-city-zip').textContent = lastOrder.address.city + ', ' + lastOrder.address.zip;
+        }
+      }
+    } catch (e) { }
+  }
+
   var confirmIcon = document.querySelector('.confirm-icon');
   if (confirmIcon) {
     confirmIcon.style.transform = 'scale(0)';

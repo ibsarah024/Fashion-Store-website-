@@ -20,15 +20,17 @@
   <div class="confirm-grid reveal">
     <div class="confirm-card">
       <h2>Order Summary</h2>
-      <div class="summary-item">
-        <div class="summary-item-img"><img src="assets/images/leather_handbag.png" alt="Lady Dior Handbag"></div>
-        <div class="summary-item-info"><strong>Lady Dior Handbag</strong><span>Black Cannage Lambskin</span></div>
-        <span class="summary-item-price">$5,900.00</span>
+      <div id="confirm-summary-items">
+        <div class="summary-item">
+          <div class="summary-item-img"><img src="assets/images/leather_handbag.png" alt="Lady Dior Handbag"></div>
+          <div class="summary-item-info"><strong>Lady Dior Handbag</strong><span>Black Cannage Lambskin</span></div>
+          <span class="summary-item-price">$5,900.00</span>
+        </div>
       </div>
       <div class="summary-divider"></div>
-      <div class="summary-row"><span>Subtotal</span><span>$5,900.00</span></div>
-      <div class="summary-row"><span>Shipping</span><span>Complimentary</span></div>
-      <div class="summary-row summary-total"><span>Total</span><span>$5,900.00</span></div>
+      <div class="summary-row"><span>Subtotal</span><span id="confirm-subtotal">$5,900.00</span></div>
+      <div class="summary-row"><span>Shipping</span><span id="confirm-shipping">Complimentary</span></div>
+      <div class="summary-row summary-total"><span>Total</span><span id="confirm-total">$5,900.00</span></div>
     </div>
     <div class="confirm-right">
       <div class="confirm-card">
@@ -36,11 +38,11 @@
         <p>Estimated Arrival:</p>
         <p class="confirm-highlight">Oct 24 – Oct 26</p>
       </div>
-      <div class="confirm-card">
+      <div class="confirm-card" id="confirm-address">
         <h2>&#128205; Shipping To</h2>
-        <p><strong>Jane Doe</strong></p>
-        <p>123 Luxury Avenue, Suite 400</p>
-        <p>New York, NY 10022</p>
+        <p><strong id="confirm-name">Jane Doe</strong></p>
+        <p id="confirm-street">123 Luxury Avenue, Suite 400</p>
+        <p id="confirm-city-zip">New York, NY 10022</p>
         <p>United States</p>
       </div>
     </div>
@@ -52,7 +54,7 @@
 </section>
 
 <footer class="footer-dark">
-  <div class="footer-content"><span class="footer-brand">DIOR</span><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Shipping &amp; Returns</a><a href="#">Contact Us</a></div><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
+  <div class="footer-content"><span class="footer-brand">DIOR</span><span class="footer-copy">© 2025 DIOR. All rights reserved.</span></div>
 </footer>
 <script src="js/script.js"></script>
 </body>
